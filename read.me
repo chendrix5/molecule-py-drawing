@@ -1,1 +1,50 @@
-Using Turtle in python, simply drew what appears to be a molecule. 
+Pyton script that uses turtle library to draw a molecule
+
+
+from turtle import *
+This line imports the turtle module and all of its functions.
+
+
+
+speed(30)
+This sets the speed of the turtle to 30. The turtle speed ranges from 0 (slowest) to 10 (fastest).
+
+
+
+color('#0d61b6')
+This sets the initial pen color of the turtle to a shade of blue (#0d61b6).
+
+
+
+bgcolor('black')
+This sets the background color of the turtle canvas to black.
+
+
+
+draw = 200
+This initializes a variable called "draw" to a value of 200.
+
+
+
+while draw >0:
+This sets up a loop that will continue until the value of "draw" is less than or equal to 0.
+
+
+
+if draw <150:
+    color('#1789FC')
+if draw < 100:
+    color('#4aa4ff')
+These two lines use conditional statements to change the color of the turtle pen as the spiral gets smaller. If the value of "draw" is less than 150, the pen color is changed to a lighter shade of blue (#1789FC). If the value of "draw" is less than 100, the pen color is changed to an even lighter shade of blue (#4aa4ff).
+
+
+
+left(draw)
+forward(draw * 3)
+These two lines move the turtle. The turtle turns to the left by an amount equal to the value of "draw", and then moves forward by a distance equal to "draw" multiplied by 3.
+
+
+
+draw -= 1
+This subtracts 1 from the value of "draw" on each iteration of the loop, causing the spiral to get smaller and smaller.
+
